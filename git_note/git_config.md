@@ -15,7 +15,7 @@ As you may expected here, git store its configuration as a file store in somewhe
 2. **~/.gitconfig** or **~/.config/git/git**: "~" means user's home dir. This config file applied to specific user. Running **git config** with **--global** option would read or write this file
 3. **<path_to_your_repo>/.git/config**: This file applied to the repo you currently working in
 
-So what we doing up there is simply setting up the username and email for our current user. 
+So what we doing up there is simply setting up the username and email for our current user.
 
 If we want to view the git settings and where they comming from, we can use the command listed below:
 
@@ -31,7 +31,7 @@ If your are not using some fancy git GUI helper, you might want to store your pa
 git config (--global) credential.helper (store/manager)
 ```
 
-The **store** command would come with the option **--file** to specify the path which credential file would be stored. By default it would store the credential infomation in the` ~/.git-credential` or $XDG_CONFIG_HOME/git/credentials
+The **store** command would come with the option **--file** to specify the path which credential file would be stored. By default it would store the credential infomation in the ` ~/.git-credential` or $XDG_CONFIG_HOME/git/credentials
 
 On windows you could specify the **Git Credential Manager** useing the Windows Credential Store which provide a easy-to-use GUI by using the **manager** command
 
@@ -51,3 +51,5 @@ To use it as a temporary option:
 ```
 git clone <git_repo_url> --config(-c) "http(s).proxy=http(s)://<your_proxy_address>:<your_proxy_port>"
 ```
+
+Normally, you would expect your vpn client is setuped on a certain port of the localhost
