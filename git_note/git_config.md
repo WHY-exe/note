@@ -19,7 +19,7 @@ So what we doing up there is simply setting up the username and email for our cu
 
 If we want to view the git settings and where they comming from, we can use the command listed below:
 
-```
+```shell
 git config --list --show-origin
 ```
 
@@ -27,7 +27,7 @@ git config --list --show-origin
 
 If your are not using some fancy git GUI helper, you might want to store your password and username of your remote git repo account so that you don't have to type username and  password every time you pull or commit somthing to your remote repos. You could use the following command
 
-```
+```shell
 git config (--global) credential.helper (store/manager)
 ```
 
@@ -41,14 +41,14 @@ There is also a **cache** command which store the credential infomation in the m
 
 You would have many good reasons to use git with the proxy. The git proxy could be stored as the config every time you use git in certain position and a temporary option for a git command. To use it as a store config, you could use:
 
-```
+```shell
 git config --global http.proxy 'http://192.168.0.1:1080'
 git config --global https.proxy 'http://192.168.0.1:1080'
 ```
 
 To use it as a temporary option:
 
-```
+```shell
 git clone <git_repo_url> --config(-c) "http(s).proxy=http(s)://<your_proxy_address>:<your_proxy_port>"
 ```
 
