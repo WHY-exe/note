@@ -16,8 +16,8 @@ BTW, the part of the operating system provides this functionality is called kern
 
 ![1710168462991](image/operating_system/1710168462991.png)
 
-The architecture of the unix system is shown above. The kernel provides 
+The architecture of the unix system is shown above. The system provides
 
-1. **system calls** as the interfaces to the programs, which allow program require resources allocation from the operating system in a common and "safe" way.
-2. **Library of common functions** are built on the top of the system calls interfaces, most of which provides "easy to use" methods for common operation
+1. **system calls** as the kernel interfaces to the programs, which allow program require resources allocation from the operating system in a common and "safe" way.
+2. **Library of common functions** are built on the top of the system calls interfaces, most of which provides "easy to use" methods for common operation(a typical example is the libstdc++)
 3. **Shell** is a special program provides ability to run other application
