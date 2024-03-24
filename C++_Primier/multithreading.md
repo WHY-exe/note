@@ -1,5 +1,7 @@
 # Passing Message Between Thread
 
+## std::promise and std::future
+
 C++ stl provides a way to establish one-way, use-once and 'single-producer-single-consumer' channel between thread. The api represent the two ends of the channel is std::promise(producer) and std::future(consumer) the example below show how to make useful of them:
 
 ```c++
